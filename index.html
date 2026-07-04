@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+    <h1>Todos</h1>
+    <img class="header-icon" src="clipboard1.svg" alt="Clipboard">
+</header>
+<section class="todo js-todo">
+    <div class="todo__header">
+        <div class="input__area">
+            <input id="toggle-list" class="toggle-all js-toggle-all" type="checkbox">
+            <label for="toggle-list" class="toggle-arrow">
+                <img class="todo-arrow" src="arrow.svg" alt="arrow">
+            </label>
+            <input id="new-todo" class="new-todo js-new-todo" type="text" placeholder="What needs to be done?"
+                   autofocus>
+        </div>
+        <div class="footer">
+            <p class="counter js-counter">0 tasks left</p>
+            <div class="buttons">
+                <a class="all js-all checked">All</a>
+                <a class="active js-active">Active</a>
+                <a class="completed js-completed">Completed</a>
+            </div>
+            <a class="clear-completed js-clear-completed">Clear completed</a>
+        </div>
+    </div>
+    <div class="todolist todolist-js"></div>
+    <div id="template" class="todo-card">
+        <img class="check js-check" src="ellipse-red.svg" alt="ellipse">
+        <p class="card-text js-card-text"></p>
+        <img class="clear js-clear" src="clear.svg" alt="clear">
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
